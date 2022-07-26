@@ -1,0 +1,25 @@
+{
+  "name": "headless-starter-kit",
+  "version": "0.0.1",
+  "description": "A headless implementation with Dynamicweb API",
+  "main": "index.js",
+  "scripts": {
+    "dev": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynamicweb/headless-starter-kit.git"
+  },
+  "keywords": [
+    "dynamicweb, headless, webcomponents"
+  ],
+  "author": "dwstj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dynamicweb/headless-starter-kit/issues"
+  },
+  "homepage": "https://github.com/dynamicweb/headless-starter-kit#readme",
+  "dependencies": {
+    "swiffy-slider": "^1.5.3"
+  }
+}
