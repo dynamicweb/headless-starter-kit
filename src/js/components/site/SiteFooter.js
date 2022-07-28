@@ -24,11 +24,11 @@ template.innerHTML = `
 	</footer>
 `;
 
-class SiteFooter extends HTMLElement {
+export class SiteFooter extends HTMLElement {
 
 	connectedCallback() {
 		this.appendChild(template.content);
 	}
 }
 
-window.customElements.define('site-footer', SiteFooter);
+customElements.define('site-footer', SiteFooter);

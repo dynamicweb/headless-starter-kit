@@ -1,0 +1,23 @@
+import '../../css/style.css'
+import { RoutingHandler } from './navigation/RoutingHandler';
+import { SiteHeader } from './site/SiteHeader';
+import { SiteFooter } from './site/SiteFooter';
+import { ArticleList } from './blocks/ArticleList';
+import HeroBlock from './blocks/Hero';
+
+export default class App extends HTMLElement {
+
+	constructor() {
+		super()
+	}
+
+	connectedCallback() {
+		this.append(new SiteHeader())
+		this.append(new RoutingHandler())
+		this.append(new HeroBlock())
+		this.append(new ArticleList())
+		this.append(new SiteFooter())
+	}
+}
+
+customElements.define('app-container', App);

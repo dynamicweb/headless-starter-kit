@@ -287,3 +287,21 @@
 .fw-bold {
 	font-weight: var(--dw-fw-bold);
 }
+.rnd-1 {
+	border-radius: var(--dw-size-1);
+}
+.rnd-2 {
+	border-radius: var(--dw-size-2);
+}
+.rnd-3 {
+	border-radius: var(--dw-size-3);
+}
+.rnd-4 {
+	border-radius: var(--dw-size-4);
+}
+.rnd-5 {
+	border-radius: var(--dw-size-5);
+}
+.rnd-6 {
+	border-radius: var(--dw-size-6);
+}
