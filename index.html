@@ -5,17 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Headless Starter Kit</title>
-	<script type="module" src="/main.js"></script>
+	<script type="module" src="/src/js/main.js"></script>
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<h1>Headless Starter Kit</h1>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde officiis perspiciatis possimus officia beatae
-				dignissimos maxime blanditiis vitae id voluptatem ipsam a magnam laborum aut odio esse, aperiam nostrum
-				modi.</p>
-		</div>
-	</header>
+	<site-header></site-header>
+	
+	<main id="app" class="site-content"></main>
+
+	<site-footer></site-footer>
 </body>
 </html>

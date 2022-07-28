@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Acari Sans Neue';
+	src: local('Acari Sans Neue'), local('AcariSansNeue-Regular'),
+		url('../fonts/acari-sans-neue/AcariSansNeue-Regular.woff2') format('woff2'),
+		url('../fonts/acari-sans-neue/AcariSansNeue-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Acari Sans Neue';
+	src: local('Acari Sans Neue Bold'), local('AcariSansNeue-Bold'),
+		url('../fonts/acari-sans-neue/AcariSansNeue-Bold.woff2') format('woff2'),
+		url('../fonts/acari-sans-neue/AcariSansNeue-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Acari Sans Neue';
+	src: local('Acari Sans Neue SemiBold'), local('AcariSansNeue-SemiBold'),
+		url('../fonts/acari-sans-neue/AcariSansNeue-SemiBold.woff2') format('woff2'),
+		url('../fonts/acari-sans-neue/AcariSansNeue-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}

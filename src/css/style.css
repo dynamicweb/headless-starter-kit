@@ -1,0 +1,51 @@
+@import url(reset.css);
+@import url(vars.css);
+@import url(webfonts.css);
+@import url(utils.css);
+
+html {
+	background-color: var(--dw-clr-neutral-1);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: var(--dw-clr-neutral-2);
+	color: var(--dw-clr-neutral-5);
+	font-family: var(--dw-ff-body);
+	font-size: var(--dw-size-3);
+	line-height: var(--dw-line-height);
+	font-weight: var(--dw-fw-normal);
+	min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--dw-ff-heading);
+	font-weight: var(--dw-fw-bold);
+	line-height: 1.125em;
+}
+
+a:not(.btn) {
+	color: inherit;
+}
+
+.site-header nav a {
+	text-decoration: none;
+}
+
+.site-header .logo {
+	text-decoration: none;
+	letter-spacing: -.04em;
+}
+.nav {
+	display: flex;
+	gap: var(--dw-size-3);
+}

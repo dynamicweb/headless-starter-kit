@@ -1,0 +1,35 @@
+:root {
+	--dw-clr-primary-1: hsl(221, 100%, 90%);
+	--dw-clr-primary-2: hsl(221, 100%, 80%);
+	--dw-clr-primary-3: hsl(221, 100%, 50%);
+	--dw-clr-primary-4: hsl(221, 100%, 40%);
+	--dw-clr-primary-5: hsl(221, 100%, 30%);
+
+	--dw-clr-accent-1: hsl(19, 87%, 80%);
+	--dw-clr-accent-2: hsl(19, 87%, 60%);
+	--dw-clr-accent-3: hsl(19, 87%, 50%);
+	--dw-clr-accent-4: hsl(19, 87%, 40%);
+	--dw-clr-accent-5: hsl(19, 87%, 30%);
+
+	--dw-clr-neutral-1: hsl(210, 50%, 100%);
+	--dw-clr-neutral-2: hsl(210, 50%, 98%);
+	--dw-clr-neutral-3: hsl(210, 50%, 96%);
+	--dw-clr-neutral-4: hsl(210, 23%, 31%);
+	--dw-clr-neutral-5: hsl(210, 50%, 13%);
+
+	--dw-ff-body: "Acari Sans Neue", sans-serif;
+	--dw-ff-heading: "Acari Sans Neue", sans-serif;
+	
+	--dw-fw-normal: 400;
+	--dw-fw-semi: 600;
+	--dw-fw-bold: 700;
+
+	--dw-line-height: 1.6;
+
+	--dw-size-1: 0.25rem;
+	--dw-size-2: 0.5rem;
+	--dw-size-3: 1rem;
+	--dw-size-4: 1.125rem;
+	--dw-size-5: 1.5rem;
+	--dw-size-6: 2rem;
+}
