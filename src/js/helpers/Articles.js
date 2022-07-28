@@ -4,7 +4,7 @@ const Articles = function() {
 		GetArticles: async () => {
 
 			fetch(
-				'./src/js/data/Articles.json',
+				'./Articles.json',
 				{
 					method: 'POST',
 					headers: {
@@ -14,7 +14,7 @@ const Articles = function() {
 				}
 			)
 			.then((res) => {
-				if (!res.ok) return Promise.reject(response);
+				if (!res.ok) return Promise.reject(res);
 				return res.json();
 			})
 			.then((res) => {

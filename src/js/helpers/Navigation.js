@@ -3,7 +3,7 @@ const Navigation = function() {
 	return {
 		GetNavigation: async () => {
 			fetch(
-				'./src/js/data/MainNavigation.json',
+				'./MainNavigation.json',
 				{
 					method: 'POST',
 					headers: {
@@ -13,7 +13,7 @@ const Navigation = function() {
 				}
 			)
 			.then((res) => {
-				if (!res.ok) return Promise.reject(response);
+				if (!res.ok) return Promise.reject(res);
 				return res.json();
 			})
 			.then((res) => {
