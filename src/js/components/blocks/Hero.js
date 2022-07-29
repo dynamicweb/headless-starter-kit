@@ -9,7 +9,7 @@ template.innerHTML = `
 						dignissimos maxime blanditiis vitae id voluptatem ipsam a magnam laborum aut odio esse, aperiam nostrum
 						modi.</p>
 					<a href="#" class="btn shadow" data-type="primary">Get Started</a>
-					<a href="#" class="btn shadow" data-type="primary-soft">Get Started</a>
+					<a href="#" class="btn shadow" data-type="primary-soft">View on GitHub</a>
 				</div>
 				<div></div>
 			</div>
@@ -17,12 +17,16 @@ template.innerHTML = `
 	</div>
 `;
 export default class HeroBlock extends HTMLElement {
-    constructor() {
+    constructor(pageTitle) {
         super();
+
+		this.pageTitle = pageTitle; 
     }
 
     connectedCallback() {
-        this.appendChild(template.content);
+		const node = template.content.firstElementChild.cloneNode(true);
+		node.querySelector('h1').textContent = this.pageTitle;
+        this.append(node);
     }
 }
 

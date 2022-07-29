@@ -26,16 +26,19 @@ export class ArticleList extends HTMLElement {
 		articles.forEach(article => {
 			const card = document.createElement('div');
 			const header = document.createElement('h3');
+			const date = document.createElement('div')
 			const text = document.createElement('p');
 			const link = document.createElement('a');
-			card.classList.add('article-card','rnd-2','p-4','bg-n-1','shadow','flow');
+			card.classList.add('article-card','rnd-2','p-6','bg-n-1','shadow','flow');
 			header.textContent = article.Name;
-			text.textContent = article.CreatedDate;
+			text.textContent = article.Item.Fields.find(x => x.Name == 'Description').Value;
+			date.textContent = new Date(article.UpdatedDate).toLocaleString('en-GB', {day: '2-digit', month: 'long' });
 			link.textContent = article.Item.Link;
 			link.href = article.Item.Link;
 			link.onclick = (e) => {
 				e.preventDefault();
-				navigate(article.Item.Link);
+				navigate(link, article.Item.Link);
+
 			}
 			card.append(header);
 			card.append(text);

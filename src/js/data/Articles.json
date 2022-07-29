@@ -3,7 +3,7 @@
     "ID": 10,
     "Name": "How to get started with headless",
     "CreatedDate": "2022-07-27T14:28:44.87",
-    "UpdatedDate": "2022-07-27T14:30:48.27",
+    "UpdatedDate": "2022-07-28T19:48:17.7718519+02:00",
     "Title": "",
     "Description": "",
     "Keywords": "",
@@ -27,6 +27,27 @@
           "Value": "How to get started with headless"
         },
         {
+          "Name": "Description",
+          "SystemName": "Description",
+          "Value": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+        },
+        {
+          "Name": "Image",
+          "SystemName": "Image",
+          "Value": [
+            {
+              "Extension": ".jpeg",
+              "Name": "article-7.jpeg",
+              "Path": "/Files/Images/article-7.jpeg",
+              "FocalX": 8,
+              "FocalPositionFromLeft": 54,
+              "FocalY": -26,
+              "FocalPositionFromTop": 63,
+              "PathUrlEncoded": "%2fFiles%2fImages%2farticle-7.jpeg"
+            }
+          ]
+        },
+        {
           "Name": "Name",
           "SystemName": "Name",
           "Value": "How to get started with headless"
@@ -42,7 +63,7 @@
     "ID": 11,
     "Name": "Getting to know javascript modules",
     "CreatedDate": "2022-07-27T14:29:08.427",
-    "UpdatedDate": "2022-07-27T14:30:46.427",
+    "UpdatedDate": "2022-07-28T19:48:28.5697482+02:00",
     "Title": "",
     "Description": "",
     "Keywords": "",
@@ -66,6 +87,27 @@
           "Value": "Getting to know javascript modules"
         },
         {
+          "Name": "Description",
+          "SystemName": "Description",
+          "Value": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+        },
+        {
+          "Name": "Image",
+          "SystemName": "Image",
+          "Value": [
+            {
+              "Extension": ".jpeg",
+              "Name": "article-8.jpeg",
+              "Path": "/Files/Images/article-8.jpeg",
+              "FocalX": 16,
+              "FocalPositionFromLeft": 58,
+              "FocalY": 4,
+              "FocalPositionFromTop": 48,
+              "PathUrlEncoded": "%2fFiles%2fImages%2farticle-8.jpeg"
+            }
+          ]
+        },
+        {
           "Name": "Name",
           "SystemName": "Name",
           "Value": "Getting to know javascript modules"
@@ -81,7 +123,7 @@
     "ID": 12,
     "Name": "What is Vite?",
     "CreatedDate": "2022-07-27T14:29:38.123",
-    "UpdatedDate": "2022-07-27T14:30:44.38",
+    "UpdatedDate": "2022-07-28T19:48:37.9434601+02:00",
     "Title": "",
     "Description": "",
     "Keywords": "",
@@ -105,6 +147,27 @@
           "Value": "What is Vite?"
         },
         {
+          "Name": "Description",
+          "SystemName": "Description",
+          "Value": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+        },
+        {
+          "Name": "Image",
+          "SystemName": "Image",
+          "Value": [
+            {
+              "Extension": ".jpeg",
+              "Name": "article-3.jpeg",
+              "Path": "/Files/Images/article-3.jpeg",
+              "FocalX": 6,
+              "FocalPositionFromLeft": 53,
+              "FocalY": 2,
+              "FocalPositionFromTop": 49,
+              "PathUrlEncoded": "%2fFiles%2fImages%2farticle-3.jpeg"
+            }
+          ]
+        },
+        {
           "Name": "Name",
           "SystemName": "Name",
           "Value": "What is Vite?"
@@ -120,7 +183,7 @@
     "ID": 13,
     "Name": "Developer friendly frontend setup",
     "CreatedDate": "2022-07-27T14:30:30.533",
-    "UpdatedDate": "2022-07-27T14:30:42.143",
+    "UpdatedDate": "2022-07-28T19:48:45.6778355+02:00",
     "Title": "",
     "Description": "",
     "Keywords": "",
@@ -142,6 +205,27 @@
           "Name": "Name",
           "SystemName": "Name",
           "Value": "Developer friendly frontend setup "
+        },
+        {
+          "Name": "Description",
+          "SystemName": "Description",
+          "Value": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+        },
+        {
+          "Name": "Image",
+          "SystemName": "Image",
+          "Value": [
+            {
+              "Extension": ".jpeg",
+              "Name": "article-6.jpeg",
+              "Path": "/Files/Images/article-6.jpeg",
+              "FocalX": 32,
+              "FocalPositionFromLeft": 66,
+              "FocalY": -6,
+              "FocalPositionFromTop": 53,
+              "PathUrlEncoded": "%2fFiles%2fImages%2farticle-6.jpeg"
+            }
+          ]
         },
         {
           "Name": "Name",
