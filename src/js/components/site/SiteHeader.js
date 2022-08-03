@@ -8,7 +8,7 @@ template.innerHTML = `
 			<a href="/" class="logo fw-bold fs-4">
 				<span class="text-p-4">👋 Headless Starter Kit</span>
 			</a>
-			<nav id="main-nav" class="nav text-n-4 fw-semi"></nav>
+			<nav id="main-nav" class="nav text-n-6 fw-semi"></nav>
 			<button class="btn shadow" data-type="primary">Get Started</button>
 		</div>
 	</header>
@@ -25,11 +25,11 @@ export class SiteHeader extends HTMLElement {
 			pages.forEach(page => {
 				const navItem = document.createElement('a');
 				nav.append(navItem);
-				navItem.href = page.Item.Link
-				navItem.textContent = page.Name
+				navItem.href = page.link
+				navItem.textContent = page.name
 				navItem.onclick = (e) => {
 					e.preventDefault();
-					navigate(navItem, page.Item.Link);
+					navigate(navItem, page.link);
 				}
 			})
 		})

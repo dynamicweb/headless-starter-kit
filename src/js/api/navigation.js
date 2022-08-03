@@ -1,6 +1,12 @@
-import NavItems from '../data/MainNavigation.json';
+import { Content } from '@dynamicweb/headless-api';
+import { createClient } from './clientFactory';
 
-export const getNavigation = async () => Promise.resolve(NavItems);
+const client = createClient(Content.NavigationsClient);
+
+export const getNavigation = async () => {
+    const navigation = await client.getById(1);
+    return navigation.nodes
+}
 
 export const navigate = (target, url) => {
     history.pushState({},'', url);

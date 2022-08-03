@@ -14,8 +14,10 @@
 	--dw-clr-neutral-1: hsl(210, 50%, 100%);
 	--dw-clr-neutral-2: hsl(210, 50%, 98%);
 	--dw-clr-neutral-3: hsl(210, 50%, 96%);
-	--dw-clr-neutral-4: hsl(210, 23%, 31%);
-	--dw-clr-neutral-5: hsl(210, 50%, 13%);
+	--dw-clr-neutral-4: hsl(210, 23%, 90%);
+	--dw-clr-neutral-5: hsl(210, 50%, 80%);
+	--dw-clr-neutral-6: hsl(210, 50%, 60%);
+	--dw-clr-neutral-7: hsl(210, 50%, 13%);
 
 	--dw-ff-body: "Acari Sans Neue", sans-serif;
 	--dw-ff-heading: "Acari Sans Neue", sans-serif;

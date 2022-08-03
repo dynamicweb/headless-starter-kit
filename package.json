@@ -5,12 +5,13 @@
   "description": "A headless implementation with Dynamicweb API",
   "scripts": {
     "dev": "vite",
-    "deploy": "vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^3.0.0",
-    "swiffy-slider": "^1.5.3"
+    "@dynamicweb/headless-api": "^0.0.1",
+    "swiffy-slider": "^1.5.3",
+    "vite": "^3.0.0"
   },
   "repository": {
     "type": "git",

@@ -14,6 +14,7 @@ export default class App extends HTMLElement {
 		this.append(new RoutingHandler())
 		this.append(new SiteFooter())
 	}
+
 }
 
 customElements.define('app-container', App);

@@ -1,5 +1,8 @@
 import { getNavigation, NavigationStateChanged, navigate } from "../../api/navigation";
 import Dw404 from "../views/404";
+import { Content } from '@dynamicweb/headless-api';
+import ErrorView from "../views/ErrorView";
+import { createClient } from "../../api/clientFactory";
 
 export class RoutingHandler extends HTMLElement {
 	#pages;
@@ -24,18 +27,22 @@ export class RoutingHandler extends HTMLElement {
 			return;
 		}
 		
-		document.title = page.Name;
+		document.title = page.name;
+
+		const client = createClient(Content.PagesClient);
+		const pageItem = await client.getById(page.pageId);
 
 		try {
-			const View = await import(`../views/${page.Item.SystemName}.js`);
-			this.replaceChildren(new View.default(page));	
+			const View = await import(`../views/${pageItem.item.systemName}.js`);
+			this.replaceChildren(new View.default(pageItem));	
 		} catch (error) {
-			this.replaceChildren(new Dw404());
+			console.log(error);
+			this.replaceChildren(new ErrorView(pageItem));
 		}
 	}
 	
 	#getPageFromUrl() {
-		const matchingPages = this.#pages.filter(p => p.Item.Link === location.pathname);
+		const matchingPages = this.#pages.filter(p => p.link === location.pathname);
 
 		if (matchingPages.length === 0 && location.pathname !== '' && location.pathname !== '/') {
 			return null;

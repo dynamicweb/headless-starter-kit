@@ -112,6 +112,11 @@
 	padding-block: var(--padding);
 }
 
+.card {
+	padding: var(--dw-size-6);
+	border: 1px solid var(--dw-clr-neutral-4);
+}
+
 /* colors */
 .bg-n-1 {
 	background-color: var(--dw-clr-neutral-1);
@@ -127,6 +132,12 @@
 }
 .bg-n-5 {
 	background-color: var(--dw-clr-neutral-5);
+}
+.bg-n-6 {
+	background-color: var(--dw-clr-neutral-6);
+}
+.bg-n-7 {
+	background-color: var(--dw-clr-neutral-7);
 }
 .bg-p-1 {
 	background-color: var(--dw-clr-primary-1);
@@ -172,6 +183,12 @@
 }
 .text-n-5 {
 	color: var(--dw-clr-neutral-5);
+}
+.text-n-6 {
+	color: var(--dw-clr-neutral-6);
+}
+.text-n-7 {
+	color: var(--dw-clr-neutral-7);
 }
 .text-p-1 {
 	color: var(--dw-clr-primary-1);
@@ -303,4 +320,7 @@
 }
 .rnd-6 {
 	border-radius: var(--dw-size-6);
+}
+.rnd-circle {
+	border-radius: 12em;
 }
