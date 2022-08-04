@@ -1,4 +1,5 @@
 import { getNavigation, navigate } from "../../api/navigation";
+import LoginButton from "./LoginButton";
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -9,7 +10,6 @@ template.innerHTML = `
 				<span class="text-p-4">👋 Headless Starter Kit</span>
 			</a>
 			<nav id="main-nav" class="nav text-n-6 fw-semi"></nav>
-			<button class="btn shadow" data-type="primary">Get Started</button>
 		</div>
 	</header>
 `;
@@ -20,6 +20,8 @@ export class SiteHeader extends HTMLElement {
 		const header = template.content;
 		getNavigation().then(pages => {
 			const nav = header.getElementById("main-nav");
+			const container = header.querySelector('.container');
+			container.append(new LoginButton());
 			this.appendChild(header);
 	
 			pages.forEach(page => {

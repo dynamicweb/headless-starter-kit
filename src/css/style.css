@@ -65,6 +65,32 @@ a:not(.btn) {
 	height: 50px;
 }
 
+login-dialog {
+    display: grid;
+    z-index: 9999;
+    position: fixed;
+    inset: 0 0 0 auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dw-clr-overlay);
+}
+
+.dialog-inner {
+    margin: auto;
+    padding: var(--dw-size-6);
+    background: var(--dw-clr-neutral-1);
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--dw-clr-neutral-4);
+    padding: var(--dw-size-3) var(--dw-size-2);
+    line-height: var(--dw-line-height);
+    font-size: var(--dw-size-3);
+}
+
 .spinner .path {
   stroke: var(--dw-clr-neutral-7);
   stroke-linecap: round;

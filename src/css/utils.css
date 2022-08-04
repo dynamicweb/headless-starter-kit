@@ -61,10 +61,14 @@
 
 /* Utilities */
 .d-flex {
+	--gap: 1em;
 	display: flex;
+	gap: var(--gap);
 }
 .d-grid {
+	--gap: 1em;
 	display: grid;
+	gap: var(--gap);
 }
 .flex-column {
 	flex-direction: column;

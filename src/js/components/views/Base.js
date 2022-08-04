@@ -20,6 +20,7 @@ export default class Base extends HTMLElement {
 		const blocks = await Promise.all(renders);
 		
 		this.replaceChildren([])
+		
 		blocks.forEach(block => {
 			const section = document.createElement('div');
 			const container = document.createElement('div');
