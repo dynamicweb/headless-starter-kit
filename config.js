@@ -7,4 +7,4 @@ VITE_BASE_URL='https://your-awesome-dw-website.com/'
 
 ========= */
 
-export const baseUrl = import.meta.env.VITE_BASE_URL;
+export const baseUrl = import.meta.env.VITE_DW_BASE_URL;
