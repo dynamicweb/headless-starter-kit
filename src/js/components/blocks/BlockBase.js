@@ -15,7 +15,6 @@ export default class BlockBase extends HTMLElement {
     getImageUrl(path, width = 1200, height = 675, compression = 75, crop = 7) {
         return `${baseUrl}/Admin/Public/GetImage.ashx?Image=${path}&Width=${width}&Height=${height}&Compression=${compression}&Crop=${crop}`;
     }
-
 }
 
 customElements.define('block-base', BlockBase);

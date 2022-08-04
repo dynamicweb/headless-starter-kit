@@ -33,6 +33,10 @@ h6 {
 	line-height: 1.125em;
 }
 
+img {
+	max-width: 100%;
+}
+
 a:not(.btn) {
 	color: inherit;
 }

@@ -81,7 +81,7 @@
 	gap: var(--grid-gap);
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 65rem) {
 	.grid {
 		grid-auto-flow: column;
 		grid-auto-columns: 1fr;
@@ -89,7 +89,7 @@
 }
 
 .container {
-	--max-width: 1200px;
+	--max-width: 1400px;
 	--padding: var(--dw-size-5);
 	margin-inline: auto;
 	width: min(var(--max-width), 100% - (var(--padding) * 2));

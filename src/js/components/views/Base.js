@@ -1,36 +1,37 @@
-import { Content } from '@dynamicweb/headless-api'
+import { Content } from '@dynamicweb/headless-api';
+import { makeBlock } from '../../api/blocks';
 import { createClient } from '../../api/clientFactory';
-import ErrorBlock from '../blocks/ErrorBlock';
 import Spinner from '../blocks/Spinner';
 
 export default class Base extends HTMLElement {
-    constructor(page) {
-        super()
-        this.page = page;
-    }
+	constructor(page) {
+		super()
+		this.page = page;
+	}
 
-    async connectedCallback() {
-        
-        this.append(new Spinner());
+	async connectedCallback() {
+		
+		this.append(new Spinner());
 
-        const client = createClient(Content.ParagraphsClient);
-        const paragraphs = await client.getAll(null, this.page.iD);
+		const client = createClient(Content.ParagraphsClient);
+		const paragraphs = await client.getAll(null, this.page.iD);
 
-        const renders = paragraphs.map(this.renderParagraph.bind(this));
-        const blocks = await Promise.all(renders);
-        
-        this.replaceChildren([])
-        blocks.forEach(block => this.append(block));
-    }
-    
-    async renderParagraph(paragraph) {
-        try {
-            const Block = await import(`../blocks/${paragraph.item.systemName}.js`);
-            return new Block.default(paragraph);
-        } catch (error) {
-            return new ErrorBlock(paragraph);
-        }
-    }
+		const renders = paragraphs.map(makeBlock);
+		const blocks = await Promise.all(renders);
+		
+		this.replaceChildren([])
+		blocks.forEach(block => {
+			const section = document.createElement('div');
+			const container = document.createElement('div');
+			
+			section.classList.add('section');
+			container.classList.add('container');
+			
+			container.append(block)
+			section.append(container)
+			this.append(section)
+		});
+	}
 }
 
 customElements.define('dw-main', Base);
