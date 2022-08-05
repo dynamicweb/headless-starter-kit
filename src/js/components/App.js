@@ -1,4 +1,4 @@
-import '../../css/style.css'
+import '../../css/style.css';
 import { RoutingHandler } from './navigation/RoutingHandler';
 import { SiteHeader } from './site/SiteHeader';
 import { SiteFooter } from './site/SiteFooter';

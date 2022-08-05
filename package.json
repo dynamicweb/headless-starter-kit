@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/dynamicweb/headless-starter-kit/issues"
   },
-  "homepage": "https://github.com/dynamicweb/headless-starter-kit#readme"
+  "homepage": "https://github.com/dynamicweb/headless-starter-kit#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1"
+  }
 }
