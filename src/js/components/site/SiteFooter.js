@@ -7,7 +7,7 @@ template.innerHTML = `
 		<div class="container">
 			<div class="grid">
 				<div class="flow">
-					${logo}
+					<div class="text-p-3" style="max-width:110px;">${logo}</div>
 					<p>It showed a lady fitted out with a fur hat and fur viewer.</p>
 				</div>
 				<div class="flow">

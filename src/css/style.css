@@ -49,7 +49,9 @@ img {
 	max-width: 100%;
 }
 
+svg.icon,
 svg.bi {
+	fill: currentColor;
 	height: 1.275rem;
     width: 1.275rem;
 }

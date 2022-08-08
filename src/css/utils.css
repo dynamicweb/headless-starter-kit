@@ -93,10 +93,27 @@
 .ai-c {
 	align-items: center;
 }
+
+.jc-c {
+	justify-content: center;
+}
+
 .grid {
 	--grid-gap: var(--dw-size-6);
 	display: grid;
 	gap: var(--grid-gap);
+}
+
+.ta-c {
+	text-align: center;
+}
+
+.ta-s {
+	text-align: left;
+}
+
+.ta-e {
+	text-align: right;
 }
 
 @media (min-width: 65rem) {
@@ -115,7 +132,7 @@
 	z-index: 1;
 }
 
-:where(.flow :not(:first-child)) {
+:where(.flow > :not(:first-child)) {
 	margin-top: var(--flow-spacer, 1em);
 }
 
