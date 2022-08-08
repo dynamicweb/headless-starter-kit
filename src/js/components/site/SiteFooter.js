@@ -1,3 +1,5 @@
+import logo from '../../../../public/dw_logo.svg?raw';
+
 const template = document.createElement('template');
 template.innerHTML = `
 	
@@ -5,6 +7,7 @@ template.innerHTML = `
 		<div class="container">
 			<div class="grid">
 				<div class="flow">
+					${logo}
 					<p>It showed a lady fitted out with a fur hat and fur viewer.</p>
 				</div>
 				<div class="flow">
