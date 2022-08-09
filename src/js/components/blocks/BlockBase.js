@@ -12,8 +12,8 @@ export default class BlockBase extends HTMLElement {
         return this.paragraph.item.fields.find(f => f.systemName === systemName)?.value;
     }
 
-    getImageUrl(path, width = 1200, height = 675, compression = 75, crop = 7) {
-        return `${baseUrl}/Admin/Public/GetImage.ashx?Image=${path}&Width=${width}&Height=${height}&Compression=${compression}&Crop=${crop}`;
+    getImageUrl(path, width = 1200, compression = 75) {
+        return `${baseUrl}/Admin/Public/GetImage.ashx?Image=${path}&Width=${width}&Quality=${compression}&Format=webp`;
     }
 }
 

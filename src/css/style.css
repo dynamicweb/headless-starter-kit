@@ -45,7 +45,19 @@ h6 {
 	}
 }
 
+image-block:not(:defined),
+text-block:not(:defined),
+statement-block:not(:defined),
+slider-block:not(:defined),
+feature-block:not(:defined) {
+    display: inline-block;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
 img {
+	width: 100%;
 	max-width: 100%;
 }
 

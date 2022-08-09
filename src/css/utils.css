@@ -146,6 +146,11 @@
 	margin-top: var(--flow-spacer, 1em);
 }
 
+.flow ul {
+	margin-left: var(--dw-size-4);
+	list-style-type: square;
+}
+
 @media (min-width: 50rem) {
 	.hidden-lg {
 		display: none;

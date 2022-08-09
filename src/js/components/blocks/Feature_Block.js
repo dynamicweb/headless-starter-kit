@@ -7,9 +7,7 @@ export default class FeatureBlock extends BlockBase {
 
     connectedCallback() {
 		this.classList.add('flow');
-        
-        const feature = document.createElement('template');
-        feature.innerHTML = `
+        const feature = document.createRange().createContextualFragment(`
             <div class="d-flex">
                 <div>
                     <div class="d-grid text-p-5 bg-p-1 p-4 rnd-circle">
@@ -23,9 +21,9 @@ export default class FeatureBlock extends BlockBase {
                     <div class="fs-4">${this.getFieldValue('Text')}</div>
                 </div>            
             </div>
-        `;
+        `);
 
-        this.append(feature.content.cloneNode(true));
+        this.append(feature);
     }
 }
 

@@ -1,5 +1,5 @@
-import { swiffyslider } from 'swiffy-slider'
-import '../../../../node_modules/swiffy-slider/dist/css/swiffy-slider.css'
+import { swiffyslider } from 'swiffy-slider';
+import "swiffy-slider/css";
 import BlockBase from './BlockBase';
 
 export default class SliderBlock extends BlockBase {
@@ -32,7 +32,7 @@ export default class SliderBlock extends BlockBase {
 		slides.forEach(slide => {
 			const path = slide.Fields.find(f => f.Name == "Image").Value[0].Path;
 			const slideItem = document.createRange().createContextualFragment(`
-				<li><img src="${this.getImageUrl(path, 1400)}" style="max-width: 100%;height: auto;"></li>
+				<li><img src="${this.getImageUrl(path, 1200)}" style="aspect-ratio: 16 / 9; object-fit: cover;"></li>
 			`);
 			const button = document.createRange().createContextualFragment(`
 				<button></button>

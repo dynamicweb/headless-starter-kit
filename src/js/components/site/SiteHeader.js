@@ -2,9 +2,7 @@ import { getNavigation, navigate } from "../../api/navigation";
 import LoginButton from "./LoginButton";
 import MenuButton from "./MenuButton";
 
-const template = document.createElement('template');
-template.innerHTML = `
-	
+const template = document.createRange().createContextualFragment(`
 	<header class="site-header bg-n-1">
 		<div class="container d-flex ai-c flex-between p-y-4">
 			<div>
@@ -19,12 +17,12 @@ template.innerHTML = `
 			<div class="button-group d-flex"></div>
 		</div>
 	</header>
-`;
+`);
 
 export class SiteHeader extends HTMLElement {
 
 	async connectedCallback() {
-		const header = template.content;
+		const header = template;
 		
 		const nav = header.getElementById("main-nav");
 		this.nav = nav;
