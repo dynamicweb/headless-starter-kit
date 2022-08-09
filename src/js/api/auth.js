@@ -1,12 +1,12 @@
 import { Authentication } from '@dynamicweb/headless-api';
 import { baseUrl } from '../../../config';
 
-const client = new Authentication.UsersClient({}, baseUrl);
 
 const DW_AUTH_TOKEN = 'DW_AUTH_TOKEN';
 
 export const login = async (username, password) => {
 	try {
+		const client = new Authentication.UsersClient(baseUrl);
 		const tokenResponse = await client.authenticate(username , password);
 		localStorage.setItem(DW_AUTH_TOKEN, tokenResponse.token);
 		const event = new AuthenticationStateChangedEvent();
@@ -15,7 +15,6 @@ export const login = async (username, password) => {
 	} catch (error) {
 		return {success: false, error: error.message};
 	}
-
 } 
 
 export const logout = async () => {
@@ -24,14 +23,19 @@ export const logout = async () => {
 	window.dispatchEvent(event);
 }
 
-export const isLoggedIn = async () => {
-	const isLoggedIn = !!localStorage.getItem(DW_AUTH_TOKEN);
-	return isLoggedIn;
-}
+export const isLoggedIn = async () => !!(await getUserInfo());
 
 export const refresh = async () => {
 	
-} 
+}
+
+export const getUserInfo = async () => {
+	const token = localStorage.getItem(DW_AUTH_TOKEN);
+	if (!token) return null;
+	const client = new Authentication.UsersClient(baseUrl, token);
+
+	return await client.getUserInfo();
+}
 
 export class AuthenticationStateChangedEvent extends CustomEvent {
 	constructor() {

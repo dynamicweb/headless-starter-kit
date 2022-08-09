@@ -1,4 +1,4 @@
-import { AuthenticationStateChanged, isLoggedIn, logout } from "../../api/auth";
+import { AuthenticationStateChanged, getUserInfo, logout } from "../../api/auth";
 import LoginDialog from "./LoginDialog";
 
 export default class LoginButton extends HTMLButtonElement {
@@ -11,19 +11,17 @@ export default class LoginButton extends HTMLButtonElement {
         
         window.addEventListener(AuthenticationStateChanged, this.handleAuthenticationStateChanged.bind(this))
 
-        this.isAuthenticated = await isLoggedIn();
-        
-        this.render();
-        
+        this.userInfo = await getUserInfo();
+        this.render(!!this.userInfo);
     }
     
-    handleAuthenticationStateChanged(e) {
-        this.isAuthenticated = !this.isAuthenticated;
-        this.render();
+    async handleAuthenticationStateChanged(e) {
+        this.userInfo = await getUserInfo();
+        this.render(!!this.userInfo);
     }
     
-    render() {
-        this.isAuthenticated ? this.renderAuthenticated() : this.renderNotAuthenticated();
+    render(isAuthenticated) {
+        isAuthenticated ? this.renderAuthenticated() : this.renderNotAuthenticated();
     }
 
     renderAuthenticated() {
@@ -32,7 +30,7 @@ export default class LoginButton extends HTMLButtonElement {
 				<use xlink:href="bootstrap-icons.svg#box-arrow-in-left"/>
 			</svg>
 		`);
-        this.innerText = 'Logout';
+        this.innerText = `Logout, ${this.userInfo.name}`;
         this.classList.add('btn');
         this.dataset.type = 'primary-soft';
         this.append(iconLogout);

@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@dynamicweb/headless-api": "~0.0.2",
+    "@dynamicweb/headless-api": "~0.0.3",
     "swiffy-slider": "^1.5.3",
     "vite": "^3.0.0"
   },
