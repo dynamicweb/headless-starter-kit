@@ -10,7 +10,7 @@ export default class FeatureBlock extends BlockBase {
         
         const feature = document.createElement('template');
         feature.innerHTML = `
-            <div class="d-flex" style="--gap: 1.5rem;">
+            <div class="d-flex">
                 <div>
                     <div class="d-grid text-p-5 bg-p-1 p-4 rnd-circle">
                         <svg class="bi" width="24" height="24" fill="currentColor">

@@ -75,12 +75,12 @@
 
 /* Utilities */
 .d-flex {
-	--gap: 1em;
+	--gap: var(--dw-size-4);
 	display: flex;
 	gap: var(--gap);
 }
 .d-grid {
-	--gap: 1em;
+	--gap: var(--dw-size-4);
 	display: grid;
 	gap: var(--gap);
 }
