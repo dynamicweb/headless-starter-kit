@@ -8,14 +8,14 @@
 	gap: var(--gap);
 	font-size: 1rem;
 	font-weight: var(--dw-fw-semi);
-	line-height: var(--dw-line-height);
+	line-height: 1.25rem;
 	letter-spacing: -.02em;
 	text-decoration: none;
 	cursor: pointer;
 	text-align: center;
 	vertical-align: middle;
 	user-select: none;
-	border-radius: var(--dw-size-1);
+	border-radius: .25rem;
 	border: 1px solid transparent;
 	background-color: transparent;
 	color: initial;
@@ -124,7 +124,7 @@
 }
 
 .container {
-	--max-width: 1280px;
+	--max-width: 1140px;
 	--padding: var(--dw-size-5);
 	margin-inline: auto;
 	width: min(var(--max-width), 100% - (var(--padding) * 2));

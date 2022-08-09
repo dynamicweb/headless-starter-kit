@@ -24,6 +24,7 @@ export default class Base extends HTMLElement {
 		blocks.forEach(block => {
 			const section = document.createElement('div');
 			const container = document.createElement('div');
+			container.style = '--max-width: 50em;'
 			
 			section.classList.add('section');
 			container.classList.add('container');

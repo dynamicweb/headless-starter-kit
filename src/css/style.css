@@ -36,8 +36,8 @@ h6 {
 
 @media (min-width: 50rem) {
 	:root {
-		--dw-size-1: 0.25rem;
-		--dw-size-2: 0.5rem;
+		--dw-size-1: 0.75rem;
+		--dw-size-2: 0.825rem;
 		--dw-size-3: 1rem;
 		--dw-size-4: 1.125rem;
 		--dw-size-5: 1.5rem;
