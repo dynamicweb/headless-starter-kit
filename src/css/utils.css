@@ -32,19 +32,19 @@
 }
 
 .btn[data-type="primary"] {
-	background-color: var(--dw-clr-primary-3);
+	background-color: var(--dw-clr-primary-4);
 	color: var(--dw-clr-neutral-1);
 }
 
 .btn[data-type="primary"]:hover,
 .btn[data-type="primary"]:focus-visible {
-	background-color: var(--dw-clr-primary-4);
+	background-color: var(--dw-clr-primary-5);
 	color: var(--dw-clr-neutral-1);
 }
 
 .btn[data-type="primary-soft"] {
 	background-color: var(--dw-clr-primary-1);
-	color: var(--dw-clr-primary-3);
+	color: var(--dw-clr-primary-4);
 }
 
 .btn[data-type="primary-soft"]:hover,
@@ -64,13 +64,23 @@
 }
 
 .btn[data-type="neutral"] {
-	background-color: var(--dw-clr-neutral-3);
+	background-color: var(--dw-clr-neutral-4);
 	color: var(--dw-clr-neutral-7);
 }
 .btn[data-type="neutral"]:hover,
 .btn[data-type="neutral"]:focus-visible {
-	background-color: var(--dw-clr-neutral-4);
-	color: var(--dw-clr-neutral-7);
+	background-color: var(--dw-clr-neutral-7);
+	color: var(--dw-clr-neutral-4);
+}
+
+.btn[data-type="dark"] {
+	background-color: var(--dw-clr-neutral-7);
+	color: var(--dw-clr-neutral-4);
+}
+.btn[data-type="dark"]:hover,
+.btn[data-type="dark"]:focus-visible {
+	background-color: var(--dw-clr-neutral-9);
+	color: var(--dw-clr-neutral-2);
 }
 
 /* Utilities */

@@ -1,9 +1,9 @@
 :root {
-	--dw-clr-primary-1: hsl(221, 100%, 90%);
-	--dw-clr-primary-2: hsl(221, 100%, 80%);
-	--dw-clr-primary-3: hsl(221, 100%, 50%);
-	--dw-clr-primary-4: hsl(221, 100%, 40%);
-	--dw-clr-primary-5: hsl(221, 100%, 30%);
+	--dw-clr-primary-1: hsl(150, 50%, 90%);
+	--dw-clr-primary-2: hsl(150, 50%, 80%);
+	--dw-clr-primary-3: hsl(150, 50%, 50%);
+	--dw-clr-primary-4: hsl(150, 50%, 40%);
+	--dw-clr-primary-5: hsl(150, 50%, 30%);
 
 	--dw-clr-accent-1: hsl(19, 87%, 80%);
 	--dw-clr-accent-2: hsl(19, 87%, 60%);
@@ -11,13 +11,15 @@
 	--dw-clr-accent-4: hsl(19, 87%, 40%);
 	--dw-clr-accent-5: hsl(19, 87%, 30%);
 
-	--dw-clr-neutral-1: hsl(210, 50%, 100%);
-	--dw-clr-neutral-2: hsl(210, 50%, 98%);
-	--dw-clr-neutral-3: hsl(210, 50%, 96%);
-	--dw-clr-neutral-4: hsl(210, 23%, 90%);
-	--dw-clr-neutral-5: hsl(210, 50%, 80%);
-	--dw-clr-neutral-6: hsl(210, 50%, 60%);
-	--dw-clr-neutral-7: hsl(210, 50%, 13%);
+	--dw-clr-neutral-1: hsl(150, 50%, 100%);
+	--dw-clr-neutral-2: hsl(150, 50%, 98%);
+	--dw-clr-neutral-3: hsl(150, 50%, 96%);
+	--dw-clr-neutral-4: hsl(150, 23%, 90%);
+	--dw-clr-neutral-5: hsl(150, 50%, 80%);
+	--dw-clr-neutral-6: hsl(150, 50%, 20%);
+	--dw-clr-neutral-7: hsl(150, 50%, 13%);
+	--dw-clr-neutral-8: hsl(150, 50%, 10%);
+	--dw-clr-neutral-9: hsl(150, 50%, 5%);
 
 	--dw-clr-overlay: hsla(210, 50%, 13%, 80%);
 

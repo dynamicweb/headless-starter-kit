@@ -15,7 +15,7 @@ template.innerHTML = `
 					<span>Starter Kit</span>
 				</a>
 			</div>
-			<nav id="main-nav" class="nav d-flex text-n-6 fw-semi" aria-expanded="false" style="--gap: 0.5em;"></nav>
+			<nav id="main-nav" class="nav d-flex text-p-5 fw-semi" aria-expanded="false" style="--gap: 0.5em;"></nav>
 			<div class="button-group d-flex"></div>
 		</div>
 	</header>
