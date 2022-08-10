@@ -3,8 +3,8 @@ import { createClient } from './clientFactory';
 
 const client = createClient(Content.NavigationsClient);
 
-export const getNavigation = async () => {
-    const navigation = await client.getById(1);
+export const getNavigation = async (stopLvl = 999, rootPageId = undefined, startLvl = 1) => {
+    const navigation = await client.getById(1, undefined, 'All', startLvl, stopLvl, rootPageId);
     return navigation.nodes
 }
 

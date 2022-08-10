@@ -12,12 +12,24 @@ export class RoutingHandler extends HTMLElement {
 	}
 
 	async connectedCallback() {
-		this.#pages = await getNavigation();
+		const pages = await getNavigation();
+		this.#pages = this.flattenNavigation(pages, []);
+		
 		document.addEventListener(NavigationStateChanged, this.handleNavigation.bind(this))
 
 		if(location.pathname !== '') {
 			navigate(this, location.pathname);
 		}
+	}
+
+	flattenNavigation(pages, result) {
+
+		pages.forEach(p => {
+			result.push(p);
+			this.flattenNavigation(p.nodes, result);
+		});
+
+		return result;
 	}
 
 	async handleNavigation(e) {
