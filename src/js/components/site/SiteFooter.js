@@ -9,7 +9,7 @@ export class SiteFooter extends HTMLElement {
 	connectedCallback() {
 		
 		const footer = document.createRange().createContextualFragment(`
-			<footer class="site-footer bg-n-7 text-n-4 p-y-6">
+			<footer class="site-footer bg-n-8 text-n-4 p-y-6">
 				<div class="container p-y-6">
 					<div class="grid">
 						<div class="flow">
