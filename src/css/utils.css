@@ -170,6 +170,7 @@
 }
 
 .section {
+	display: block;
 	padding-block-start: var(--padding-top, 2rem);
 	padding-block-end: var(--padding-bottom, 2rem);
 }
