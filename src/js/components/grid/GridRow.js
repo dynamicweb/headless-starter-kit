@@ -7,7 +7,6 @@ export default class GridRow extends HTMLDivElement {
     }
 
     connectedCallback() {
-        console.log(this.row)
         this.classList.add('section');
         this.dataset.row = this.row.id;
         this.dataset.background = this.getFieldValue('Background');
