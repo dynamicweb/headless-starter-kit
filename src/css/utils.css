@@ -223,11 +223,9 @@
 }
 
 .card {
-	--max-width: 35em;
 	position: relative;
 	display: flex;
 	min-width: 0;
-	max-width: var(--max-width);
 	word-wrap: break-word;
 	border-radius: var(--dw-size-4);
 	padding: var(--dw-size-5);
