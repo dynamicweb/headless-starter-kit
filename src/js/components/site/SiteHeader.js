@@ -21,6 +21,10 @@ const template = document.createRange().createContextualFragment(`
 
 export class SiteHeader extends HTMLElement {
 
+	constructor() {
+		super()
+	}
+
 	async connectedCallback() {
 		const header = template;
 		

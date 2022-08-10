@@ -2,6 +2,10 @@ import logo from '../../../../public/dw_logo.svg?raw';
 
 export class SiteFooter extends HTMLElement {
 
+	constructor() {
+		super()
+	}
+
 	connectedCallback() {
 		
 		const footer = document.createRange().createContextualFragment(`
