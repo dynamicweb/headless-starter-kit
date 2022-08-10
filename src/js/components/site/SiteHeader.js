@@ -2,23 +2,6 @@ import { getNavigation, navigate } from "../../api/navigation";
 import LoginButton from "./LoginButton";
 import MenuButton from "./MenuButton";
 
-const template = document.createRange().createContextualFragment(`
-	<header class="site-header bg-n-1">
-		<div class="container d-flex ai-c flex-between p-y-4">
-			<div>
-				<a href="/" class="logo d-flex ai-c fw-bold fs-4">
-					<svg class="bi" width="24" height="24" fill="currentColor">
-						<use xlink:href="bootstrap-icons.svg#terminal"/>
-					</svg>
-					<span>Starter Kit</span>
-				</a>
-			</div>
-			<nav id="main-nav" class="nav d-flex text-p-5 fw-semi" aria-expanded="false" style="--gap: 0.5em;"></nav>
-			<div class="button-group d-flex"></div>
-		</div>
-	</header>
-`);
-
 export class SiteHeader extends HTMLElement {
 
 	constructor() {
@@ -26,7 +9,22 @@ export class SiteHeader extends HTMLElement {
 	}
 
 	async connectedCallback() {
-		const header = template;
+		const header = document.createRange().createContextualFragment(`
+			<header class="site-header bg-n-1">
+				<div class="container d-flex ai-c flex-between p-y-4">
+					<div>
+						<a href="/" class="logo d-flex ai-c fw-bold fs-4">
+							<svg class="bi" width="24" height="24" fill="currentColor">
+								<use xlink:href="bootstrap-icons.svg#terminal"/>
+							</svg>
+							<span>Starter Kit</span>
+						</a>
+					</div>
+					<nav id="main-nav" class="nav d-flex text-p-5 fw-semi" aria-expanded="false" style="--gap: 0.5em;"></nav>
+					<div class="button-group d-flex"></div>
+				</div>
+			</header>
+		`);
 		
 		const nav = header.getElementById("main-nav");
 		this.nav = nav;
@@ -46,7 +44,7 @@ export class SiteHeader extends HTMLElement {
 		
 		this.appendChild(header);
 		
-		const pages = await getNavigation()
+		const pages = await getNavigation(1)
 		pages.forEach(page => {
 			const navItem = document.createElement('a');
 			nav.append(navItem);

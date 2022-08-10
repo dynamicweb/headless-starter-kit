@@ -1,7 +1,7 @@
 import { AuthenticationStateChanged, getUserInfo, logout } from "../../api/auth";
 import LoginDialog from "./LoginDialog";
 
-export default class LoginButton extends HTMLButtonElement {
+export default class LoginButton extends HTMLElement {
 
     constructor() {
         super()
@@ -51,4 +51,4 @@ export default class LoginButton extends HTMLButtonElement {
     }
 }
 
-customElements.define('login-button', LoginButton, { extends : 'button'});
+customElements.define('login-button', LoginButton);

@@ -1,6 +1,6 @@
 import { makeBlock } from "../../api/blocks";
 
-export default class GridRowColumn extends HTMLDivElement {
+export default class GridRowColumn extends HTMLElement {
     constructor(column) {
         super()
         this.column = column;
@@ -13,4 +13,4 @@ export default class GridRowColumn extends HTMLDivElement {
     }
 }
 
-customElements.define('grid-row-column', GridRowColumn, {extends: 'div'});
+customElements.define('grid-row-column', GridRowColumn);

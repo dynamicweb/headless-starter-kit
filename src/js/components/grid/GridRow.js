@@ -1,12 +1,13 @@
 import GridRowColumn from "./GridRowColumn";
 
-export default class GridRow extends HTMLDivElement {
+export default class GridRow extends HTMLElement {
     constructor(row) {
         super()
         this.row = row;
     }
 
     connectedCallback() {
+        console.log(this.row)
         this.classList.add('section');
         this.dataset.row = this.row.id;
         this.dataset.background = this.getFieldValue('Background');
@@ -31,4 +32,4 @@ export default class GridRow extends HTMLDivElement {
     }
 }
 
-customElements.define('grid-row', GridRow, {extends: 'div'});
+customElements.define('grid-row', GridRow);
