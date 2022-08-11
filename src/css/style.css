@@ -70,6 +70,7 @@ svg.bi {
 
 a:not(.btn):not([class="text-*"]) {
 	color: inherit;
+	display: inline-flex;
 }
 
 .site-header {
