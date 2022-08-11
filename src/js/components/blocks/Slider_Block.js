@@ -13,7 +13,6 @@ export default class SliderBlock extends BlockBase {
 	}
 
 	render() {
-
 		const slides = this.getFieldValue('Slides');
 		
 		const slider = document.createRange().createContextualFragment(`
@@ -36,8 +35,7 @@ export default class SliderBlock extends BlockBase {
 			`);
 			const button = document.createRange().createContextualFragment(`
 				<button></button>
-			`)
-			console.log(slide);
+			`);
 			sliderContainer.append(slideItem);
 			sliderIndicators.append(button)
 		});
