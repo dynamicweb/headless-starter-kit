@@ -16,7 +16,7 @@ export default class SliderBlock extends BlockBase {
 		const slides = this.getFieldValue('Slides');
 		
 		const slider = document.createRange().createContextualFragment(`
-			<div class="swiffy-slider"></div>
+			<div class="swiffy-slider slider-nav-round slider-nav-dark slider-nav-sm slider-indicators-highlight slider-indicators-round"></div>
 		`).firstElementChild;
 
 		const sliderContainer = document.createRange().createContextualFragment(`

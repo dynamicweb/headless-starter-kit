@@ -2,7 +2,7 @@ import { swiffyslider } from 'swiffy-slider';
 import "swiffy-slider/css";
 import BlockBase from "./BlockBase";
 
-export default class ProductGroupsSliderBlock extends BlockBase {
+export default class ProductGroupsSliderLargeBlock extends BlockBase {
     constructor(paragraph) {
         super(paragraph);
     }
@@ -17,7 +17,7 @@ export default class ProductGroupsSliderBlock extends BlockBase {
         const groups = this.getFieldValue('ProductGroups');
 		
 		const slider = document.createRange().createContextualFragment(`
-			<div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-dark slider-nav-scrollbar slider-nav-sm"></div>
+			<div class="swiffy-slider slider-item-show4 slider-nav-round slider-nav-dark slider-nav-scrollbar slider-nav-sm"></div>
 		`).firstElementChild;
 
 		const sliderContainer = document.createRange().createContextualFragment(`
@@ -26,12 +26,13 @@ export default class ProductGroupsSliderBlock extends BlockBase {
 
 		groups.forEach(group => {
             const assets = group.Assets;
-            const image = assets.find(f => f.Name === 'Icon')?.Value;
+            console.log(assets)
+            const image = assets.find(f => f.Name === 'SmallImage')?.Value;
 			const slideItem = document.createRange().createContextualFragment(`
 				<li>
-                    <div class="bg-n-1 d-flex flex-between ai-c mb-3 rnd-1">
-                        <h5 class="fs-4 p-x-3">${group.Name}</h5>
-                        <div><img src="${this.getImageUrl(image, 100)}" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+                    <div class="d-flex flex-column flex-between mb-3 rnd-1">
+						<div class="rnd-1"><img src="${this.getImageUrl(image, 400)}" style="aspect-ratio: 3/4; object-fit: cover;"></div>
+                        <div class=""><h4 class="fs-5">${group.Name}</h4></div>
                     </div>
                 </li>
 			`);
@@ -52,4 +53,4 @@ export default class ProductGroupsSliderBlock extends BlockBase {
     }
 }
 
-customElements.define('product-groups-slider-block', ProductGroupsSliderBlock);
+customElements.define('product-groups-slider-large-block', ProductGroupsSliderLargeBlock);
