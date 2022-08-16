@@ -7,8 +7,11 @@ export default class GridRowColumn extends HTMLElement {
     }
 
     async connectedCallback() {
-        const block = await makeBlock(this.column.paragraph);
         this.classList.add('grid-column');
+
+        if (this.column.paragraph === undefined) return;
+        
+        const block = await makeBlock(this.column.paragraph);
         this.append(block);
     }
 }

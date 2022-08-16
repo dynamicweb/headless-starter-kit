@@ -8,8 +8,7 @@ export default class GridPage extends HTMLElement {
 		this.page = page;
 	}
 
-	async connectedCallback() {
-		
+	async connectedCallback() {	
 		const client = createClient(Content.GridRowClient);
 		const gridRows = await client.getById(this.page.iD);
 		

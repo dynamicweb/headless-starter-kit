@@ -8,7 +8,7 @@ export default class ErrorBlock extends HTMLElement {
 
     connectedCallback() {
 
-        this.innerHTML = `Block not found (${this.paragraph.item.systemName})`;
+        this.innerHTML = `Block not found (${this.paragraph?.item?.systemName})`;
 
     }
 }

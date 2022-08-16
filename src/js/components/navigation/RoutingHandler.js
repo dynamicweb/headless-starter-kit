@@ -18,7 +18,7 @@ export class RoutingHandler extends HTMLElement {
 		document.addEventListener(NavigationStateChanged, this.handleNavigation.bind(this))
 
 		if(location.pathname !== '') {
-			navigate(this, location.pathname);
+			navigate(this, location.pathname + location.search);
 		}
 	}
 
