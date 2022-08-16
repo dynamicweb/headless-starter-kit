@@ -15,7 +15,7 @@ export default class MenuButton extends HTMLElement {
 	renderOpen() {
 		const iconOpen = document.createRange().createContextualFragment(`
 			<svg class="bi" width="24" height="24" fill="currentColor">
-				<use xlink:href="bootstrap-icons.svg#list"/>
+				<use xlink:href="/bootstrap-icons.svg#list"/>
 			</svg>
 		`);
 		this.dataset.type = 'neutral';
@@ -27,7 +27,7 @@ export default class MenuButton extends HTMLElement {
 	renderClose() {
 		const iconClose = document.createRange().createContextualFragment(`
 			<svg class="bi" width="24" height="24" fill="currentColor">
-				<use xlink:href="bootstrap-icons.svg#x-lg"/>
+				<use xlink:href="/bootstrap-icons.svg#x-lg"/>
 			</svg>
 		`);
 		this.dataset.type = 'neutral';

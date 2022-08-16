@@ -12,7 +12,7 @@ export default class FeatureBlock extends BlockBase {
                 <div>
                     <div class="d-grid icon-circle p-4 rnd-circle">
                         <svg class="bi" width="24" height="24" fill="currentColor">
-                            <use xlink:href="bootstrap-icons.svg#${this.getFieldValue('Icon')}"/>
+                            <use xlink:href="/bootstrap-icons.svg#${this.getFieldValue('Icon')}"/>
                         </svg>
                     </div>
                 </div>

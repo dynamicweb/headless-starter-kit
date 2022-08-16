@@ -27,7 +27,7 @@ export default class LoginButton extends HTMLElement {
     renderAuthenticated() {
         const iconLogout = document.createRange().createContextualFragment(`
 			<svg class="bi" width="24" height="24" fill="currentColor">
-				<use xlink:href="bootstrap-icons.svg#box-arrow-in-left"/>
+				<use xlink:href="/bootstrap-icons.svg#box-arrow-in-left"/>
 			</svg>
 		`);
         this.innerText = `Logout, ${this.userInfo.name}`;
@@ -40,7 +40,7 @@ export default class LoginButton extends HTMLElement {
     renderNotAuthenticated() {
         const iconLogin = document.createRange().createContextualFragment(`
 			<svg class="bi" width="24" height="24" fill="currentColor">
-				<use xlink:href="bootstrap-icons.svg#box-arrow-in-right"/>
+				<use xlink:href="/bootstrap-icons.svg#box-arrow-in-right"/>
 			</svg>
 		`);
         this.innerText = 'Login';

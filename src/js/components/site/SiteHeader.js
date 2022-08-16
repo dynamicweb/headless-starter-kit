@@ -15,7 +15,7 @@ export class SiteHeader extends HTMLElement {
 					<div>
 						<a href="/" class="logo d-flex ai-c fw-bold fs-4">
 							<svg class="bi" width="24" height="24" fill="currentColor">
-								<use xlink:href="bootstrap-icons.svg#terminal"/>
+								<use xlink:href="/bootstrap-icons.svg#terminal"/>
 							</svg>
 							<span>Starter Kit</span>
 						</a>
