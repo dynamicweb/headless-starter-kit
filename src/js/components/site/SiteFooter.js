@@ -1,4 +1,4 @@
-import logo from '../../../../public/dw_logo.svg?raw';
+import logo from '/dw_logo.svg?raw';
 
 export class SiteFooter extends HTMLElement {
 
@@ -28,7 +28,7 @@ export class SiteFooter extends HTMLElement {
 
 							<div class="d-flex">
 								<svg class="bi" width="24" height="24" fill="currentColor">
-									<use xlink:href="bootstrap-icons.svg#geo-alt-fill"/>
+									<use xlink:href="/bootstrap-icons.svg#geo-alt-fill"/>
 								</svg>
 								<div>
 									<span>Bjoernholms Allé 30, </br> 8260 Viby J</span>
@@ -37,7 +37,7 @@ export class SiteFooter extends HTMLElement {
 
 							<div class="d-flex">
 								<svg class="bi" width="24" height="24" fill="currentColor">
-									<use xlink:href="bootstrap-icons.svg#telephone-fill"/>
+									<use xlink:href="/bootstrap-icons.svg#telephone-fill"/>
 								</svg>
 								<div>
 									<span>+45 7025 2090</span>
@@ -46,7 +46,7 @@ export class SiteFooter extends HTMLElement {
 
 							<div class="d-flex">
 								<svg class="bi" width="24" height="24" fill="currentColor">
-									<use xlink:href="bootstrap-icons.svg#envelope-fill"/>
+									<use xlink:href="/bootstrap-icons.svg#envelope-fill"/>
 								</svg>
 								<div>
 									<span>info@dynamicweb.dk</span>
