@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@dynamicweb/headless-api": "~0.0.3",
+    "start-dom-jsx": "^1.0.0-beta.1",
     "swiffy-slider": "^1.5.3",
     "vite": "^3.0.0"
   },
