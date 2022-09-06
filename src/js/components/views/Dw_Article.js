@@ -9,7 +9,6 @@ export default class DwArticle extends HTMLElement {
 	}
 
 	async connectedCallback() {
-		console.log(this.page);
 		const client = createClient(Content.GridRowClient);
 		const gridRows = await client.getById(this.page.iD);
 		
