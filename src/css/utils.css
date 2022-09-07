@@ -94,6 +94,12 @@
 	display: grid;
 	gap: var(--gap);
 }
+.d-block {
+	display: block;
+}
+.d-inline-block {
+	display: inline-block;
+}
 .flex-column {
 	flex-direction: column;
 }
@@ -108,7 +114,9 @@
 .jc-c {
 	justify-content: center;
 }
-
+.sticky {
+	position: sticky;
+}
 .grid {
 	--grid-gap: var(--dw-size-6);
 	display: grid;

@@ -9,7 +9,7 @@ export class ProductItem extends ItemBase {
         const product = this.item;
         const productItem = document.createRange().createContextualFragment(`
             <div class="d-flex flex-column flex-between mb-3 bg-n-1" style="--gap:0;">
-                <div><img class="" src="${this.getImageUrl(product.defaultImage.value, 400)}" style="aspect-ratio: 3/4; object-fit: cover;" alt="${product.name}" /></div>
+                <div><img class="" src="${this.getImageUrl(product.defaultImage.value, 400)}" style="aspect-ratio: 3/4; object-fit: contain;" alt="${product.name}" /></div>
                 <div class="p-1">
                     <a href="${product.rootPath}?ProductID=${product.id}"><h5 class="fs-3">${product.name}</h5></a>
                     <div class=""><span class="fs-3">${product.price.priceFormatted}</span></div>
